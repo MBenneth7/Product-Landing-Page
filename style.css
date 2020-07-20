@@ -1,21 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap');
 
 body{
-    color: #fff;
+    color: #000;
     margin: 0;
     padding: 0;
     background-size: cover;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 2.5em;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 2.3em;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-weight: 100;
+}
+
+.bigger-font{
+    font-weight: 100;
+    font-size: 1.6em;
+}
+
+.smaller-font{
+    font-weight: 100;
+    font-size: 0.9em;
+}
+
+.adjusted{
+    width: 250px;
+    height: 100px;
+}
+
+.spacing{
+    margin-top: 8%;
+    margin-bottom: 8%; 
+}
+
+.line-spacing{
+    line-height: 1.67em;
+}
+
+.spec{
+    width: 40%;
+    margin: 0 5%;
+    padding: 0;
+}
+
+.spec-img{
+    width: 50%;
+}
+
+.center-content{
+    width: 85%;
+    margin: 0 7.5%;
+}
+
+.flex-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.flex-img{
+    width: 100%;
+}
+
+.center-flex-item{
+    justify-content: space-around;
+}
+
+.adjusted-flex-img{
+    width: 85%;
+}
+
+.flex-first{
+    order: 1;
+}
+
+.flex-second{
+    order: 2;
+}
+
+.hero-layout{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    color: #fff;
+}
+
+.hero-text{
+    position: absolute;
+    width: 30%;
+    top: 10%;
+    left: 5%;
+}
+
+.hero-logo{
+    width: 300px;
+}
+
+.game-layout{
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.text-box-left{
+    position: absolute;
+    width: 35%;
+    top: 10%;
+    left: 3%;
+    opacity: 0.8;
+    border-radius: 15%;
+    padding: 30px;
+}
+
+
+.text-box-right{
+    position: absolute;
+    width: 35%;
+    top: 30%;
+    left: 50%;
+    opacity: 0.8;
+    border-radius: 15%;
+    padding: 30px;
+}
+
+.white-background{
+    background: #fff;
+    color:#000;
+}
+
+.black-background{
+    background: #000;
+    color: #fff;
 }
 
 #nav-bar{
     margin: 0;
     padding: 0;
+    width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
     background: #fff;
+    z-index:999;
 }
 
 #header-img{
@@ -43,9 +185,9 @@ a{
 #intro{
     background: #000;
     width: 100%;
-    height: 60vh;
-    margin-bottom: 10px;
+    height: 450px;
     padding-top: 20px;
+    margin-bottom: 200px;
     display: flex;
     justify-content: space-around;
 }
@@ -68,12 +210,62 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #fff;
 }
 
-.adjusted{
-    width: 250px;
-    height: 100px;
+#intro-2{
+    color: #000;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 20%; 
 }
+
+#intro-2 img{
+    width: 90%;
+}
+
+#features-main{
+    background: url("./images/features-background.jpeg") center center no-repeat;
+    background-size: cover;
+}
+
+#features-end{
+    background: url("./images/features-03.jpeg") center center no-repeat;
+    background-size: cover;
+}
+
+#games-main img{
+    width: 45%;
+}
+
+#game-display-1{
+    background: url("./images/games-03.jpeg") center center no-repeat;
+    background-size: cover;
+}
+
+#game-display-2{
+    background: url("./images/games-04.jpeg") center center no-repeat;
+    background-size: cover;
+}
+
+#game-display-3{
+    background: url("./images/games-01.jpeg") center center no-repeat;
+    background-size: cover;
+}
+
+#game-display-4{
+    background: url("./images/games-02.jpeg") center center no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
 
 
 
