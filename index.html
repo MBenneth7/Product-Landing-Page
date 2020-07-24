@@ -7,21 +7,38 @@
     <body>
         <header id = "header">
             <nav id = "nav-bar">
-                <img id = "header-img" src = "images/ps-logo.png">
+                <a href = "#intro">
+                    <img id = "header-img" src = "images/ps-logo.png">
+                </a>    
                 <ul id = "nav-links">
                     <li class = "nav-link"><a href = "#features-main">Features</a></li>
                     <li class = "nav-link"><a href = "#games-main">Games</a></li>
-                    <li class = "nav-link"><a href = "#">Pricing</a></li>
+                    <li class = "nav-link"><a href = "#pricing">Pricing</a></li>
                 </ul>
             </nav>
         </header>
+
         <section id = "intro">
+
+            <div id = "video">
+
+                <div class = "black-layer">
+                    <video autoplay loop muted>
+                        <source src = "videos/ps4-product-video.mp4" type = "video/mp4">
+                    </video>
+                </div>
+            </div>
+
             <div id = "intro-image">
-                <img src = "images/ps4.png">
+                <img src = "images/ps4.png">    
             </div>
             <div id = "intro-description">
-                <img class = "adjusted" src = "images/phrase.png">
-                <p>Some Text here</p>
+                <img src = "images/phrase.png">
+                <p class = "bigger-font">The PlayStation®4 system now starting at $299.99 MSRP</p>
+                <div class = "display-inline"> 
+                    <button class = "red-button">Buy Now</button>
+                    <button class = "blue-button">Learn More</button>
+                </div>
             </div>
         </section>
         <section id = "intro-2" class = "spacing center-content">
@@ -76,7 +93,9 @@
         <section id = "features-end" class = "spacing hero-layout">
             <div class = "hero-text">
                 <img class = "hero-logo" src = "images/store-logo.png">
-                <p class = "smaller-font line-spacing">Browse PlayStation Store for the latest and greatest digital game content, exclusive pre-order deals, value bundles and sales. Get access to the entire catalog of PlayStation 4 content including full game releases, indie content, free to play games, free game demos, VR games, and more. Digital games are available day and date at launch, and pre-ordered games can be pre-loaded to your console several days in advance so you can start playing right at launch. PlayStation Store also features frequent game sales and discounts, as well as movies and TV content for rent or purchase, add-on DLC for your favorite games, avatars and background themes to customize your PS4, and more.</p>
+                <p class = "smaller-font line-spacing">Browse PlayStation Store for the latest and greatest digital game content, exclusive pre-order deals, value bundles and sales. Get access to the entire catalog of PlayStation 4 content including full game releases, indie content, free to play games, free game demos, VR games, and more. Digital games are available day and date at launch, and pre-ordered games can be pre-loaded to your console several days in advance so you can start playing right at launch. PlayStation Store also features frequent game sales and discounts, as well as movies and TV content for rent or purchase, add-on DLC for your favorite games, avatars and background themes to customize your PS4, and more.
+                </p>
+                <button class= "blue-button">Learn More</button>
             </div>
         </section>
 
@@ -121,8 +140,8 @@
                         The new slim PlayStation®4 opens the door to extraordinary journeys through immersive new gaming worlds and a deeply connected gaming community.
                         The lighter and slimmer PlayStation®4 system now has a 1TB hard drive for all of the greatest games, TV, music, and more.
                     </p>
-                    <button>Buy Now</button>
-                    <button>Learn More</button>
+                    <button class = "blue-button">Buy Now</button>
+                    <button class = "red-button">Learn More</button>
                 </div>
                 <div class = "spec-img flex-second">
                     <img class = "flex-img" src = "./images/ps4.png">
@@ -130,12 +149,12 @@
             </div>
             <div class = "flex-section spacing"> 
                 <div class = "spec flex-second">
-                    <h1>The Slim PlayStation® 4 System</h1>
+                    <h1>The PlayStation® 4 Pro</h1>
                     <p class = "line-spacing">
                         Heighten your experiences. Enrich your adventures. Let the super-charged PS4™ Pro lead the way.
                     </p>
-                    <button>Buy Now</button>
-                    <button>Learn More</button>
+                    <button class = "blue-button">Buy Now</button>
+                    <button class = "red-button">Learn More</button>
                 </div>
                 <div class = "spec-img flex-first">
                     <img class = "flex-img" src = "./images/ps4-pro.jpeg">
