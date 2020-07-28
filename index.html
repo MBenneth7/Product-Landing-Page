@@ -3,14 +3,26 @@
     <head>
         <title>Playstation</title>
         <link href = "style.css" type = "text/css" rel = "stylesheet">
+        <!--MOBILE VIEW-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header id = "header">
             <nav id = "nav-bar">
                 <a href = "#intro">
                     <img id = "header-img" src = "images/ps-logo.png">
-                </a>    
-                <ul id = "nav-links">
+                </a>
+                <div id = "mobile-access">
+
+                    <svg viewBox="0 0 100 80" width="30" height="30">
+                        <rect width="100" height="20" rx="8"></rect>
+                        <rect y="30" width="100" height="20" rx="8"></rect>
+                        <rect y="60" width="100" height="20" rx="8"></rect>
+                    </svg>
+
+                </div>    
+                
+                <ul>
                     <li class = "nav-link"><a href = "#features-main">Features</a></li>
                     <li class = "nav-link"><a href = "#games-main">Games</a></li>
                     <li class = "nav-link"><a href = "#buy-now">Buy Now</a></li>
@@ -390,7 +402,35 @@
             <div id = "form-button">
                 <input type = "submit" id = "submit" value = "Sign up" class = "blue-button">
             </div>    
-        </form>    
+        </form>
+        
+        <footer id = "footer" class = "hero-layout">
+
+            <div class = "footer-column-1">
+               This webpage is not associated with Sony. All images and properties belong to Sony. This webpage was made for educational purposes.
+            </div>
+
+            <div class = "footer-column-2">
+                <h3>Product Landing Page</h3>
+                <h5>Author: Mark Sayong</h5>
+                <h5>Email: mbenneth7@yahoo.com</h5>
+            </div>
+
+        </footer>
+
+        <script>
+
+            let nav = document.querySelector("#mobile-access");
+            let menu = document.querySelector("nav ul");
+            let links = document.querySelector("nav ul li")
+            
+            nav.addEventListener('click', function(){
+                menu.classList.toggle("nav-show");
+            });
+            
+        
+         </script>
 
     </body>
+
 </html>
